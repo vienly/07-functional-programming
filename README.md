@@ -1,4 +1,4 @@
-![CF](https://i.imgur.com/7v5ASc8.png)  07-functional-programming
+![CF](https://i.imgur.com/7v5ASc8.png)  Lab 07: Functional Programming
 =======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/07-functional-programming.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/07-functional-programming)
 
