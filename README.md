@@ -1,4 +1,6 @@
-# Functional Programming
+![CF](https://i.imgur.com/7v5ASc8.png)  07-functional-programming
+=======
+[![Build Status](https://travis-ci.org/codefellows-seattle-301d4/07-functional-programming.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/07-functional-programming)
 
 The concepts of functional programming have significantly shaped Computer Science from the early days.
 
