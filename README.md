@@ -20,7 +20,7 @@ Today there are many TODO items, but they are (mostly) smaller bites.
 1. Finally, fill in author stats, using your FP-style data methods!
 
 
-# TODOs: Stretch Goals
+# User Stories: Stretch Goals
 - What statistical analysis would be of interest to you with this data set? Code it up!
 
 
