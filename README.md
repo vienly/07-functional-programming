@@ -21,8 +21,7 @@ Today there are many TODO items, but they are (mostly) smaller bites.
 
 
 # User Stories: Stretch Goals
-- What statistical analysis would be of interest to you with this data set? Code it up!
-
+- What statistical analysis would be of interest to you with this data set? Code it up!  
 
 
 
