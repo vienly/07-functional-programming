@@ -26,9 +26,7 @@ Today there are many TODO items, but they are (mostly) smaller bites.
 
 
 
-## Write code together!
-
-Find those `TODO` items in the code, and tackle one of them.
+## Recommended workflow:
 
 1. Driver: In your terminal, ensure that:
    - you are on a branch with you and your partner's namesake.
