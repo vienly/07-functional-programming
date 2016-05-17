@@ -15,6 +15,9 @@
     <script id="author-template" type="text/x-handlebars-template">
       <li><strong>{{name}}</strong>: {{numWords}} words written</li>
     </script>
+    <script id="year-template" type="text/x-handlebars-template">
+      <li><strong>{{year}}</strong>: {{numWordsPerYear}} words written</li>
+    </script>
     </head>
   <body>
     <header class="site-header clearfix">
@@ -42,6 +45,9 @@
         <p><em>Details on who is writing, and how much writing they are doing...</em></p>
         <ul class="author-stats">
           <!-- DONE: Setup an unordered list to later append to with some stats for each author -->
+        </ul>
+        <h2>Words Per Year</h2>
+        <ul class="year-stats">
         </ul>
       </section>
     </main>

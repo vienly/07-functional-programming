@@ -112,6 +112,7 @@
         return an array, we'll need to specify an accumulator type...
         What data type should this accumulator be and where is it placed? */
 
+
   Article.numWordsByAuthor = function() {
     /* TODO: Transform each author element into an object with 2 properties:
         One for the author's name, and one for the total number of words across
@@ -134,6 +135,39 @@
         // })
         // .map(...) // use .map to return the author's word count for each article's body (hint: regexp!).
         // .reduce(...) // squash this array of numbers into one big number!
+      };
+    });
+  };
+  Article.allYears = function() {
+
+    return Article.all.map(function(article) {
+      var date = new Date(article.publishedOn);
+      var fullYear = date.getFullYear();
+      return fullYear;
+    })
+    .reduce(function(acc, curr, idx, arr) {
+      if(acc.indexOf(curr) === -1) {
+        acc.push(curr);
+      }
+      return acc;
+    },[]);
+  };
+
+  Article.numWordsPerYear = function() {
+    return Article.allYears().map(function(a) {
+      return {
+        year: a,
+        numWordsPerYear: Article.all.filter(function(article) {
+          var date = new Date(article.publishedOn);
+          var fullYear = date.getFullYear();
+          return a === fullYear;
+        })
+        .map(function(article) {
+          return article.body.match(/\b\w+/g).length;
+        })
+        .reduce(function(a, b) {
+          return a + b;
+        })
       };
     });
   };
