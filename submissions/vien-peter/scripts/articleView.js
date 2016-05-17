@@ -107,17 +107,20 @@
   articleView.initAdminPage = function() {
     // DONE: Call the Handlebars `.compile()` method to fill in our admin stats section.
     var template = Handlebars.compile($('#author-template').html());
-
     // DONE: We use `forEach` here because we are relying on the side-effects of the callback function:
     // appending to the DOM.
     // The callback is not required to return anything.
     Article.numWordsByAuthor().forEach(function(stat) {
       $('.author-stats').append(template(stat));
     });
-
     // DONE: Simply write the correct values to the page:
     $('#blog-stats .articles').text(Article.all.length);
     $('#blog-stats .words').text(Article.numWordsAll());
+
+    template = Handlebars.compile($('#year-template').html());
+    Article.numWordsPerYear().forEach(function(stat) {
+      $('.year-stats').append(template(stat));
+    });
   };
 
   module.articleView = articleView;
