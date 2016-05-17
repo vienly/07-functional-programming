@@ -80,7 +80,7 @@ Article.getAll = function(next) {
 Article.numWordsAll = function() {
   return Article.all.map(function(article) {
       //DONE: Grab the word count from each article body.
-     return article.body.match(/\b\w+/g).length;
+    return article.body.match(/\b\w+/g).length;
   })
   .reduce(function(a, b) {
     // return (TODO: Sum up all the values!)
